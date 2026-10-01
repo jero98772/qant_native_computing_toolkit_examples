@@ -1,0 +1,9 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+numpy
+torch==2.11.0
+ml_dtypes
+pytest
+# Q.ANT toolkit built from the submodule in standalone CPU mode (no NPU hardware needed).
+# On a machine with Q.ANT hardware and drivers, drop the --config-settings part.
+../../qant_native_computing_toolkit --config-settings build-args="--features cpu-backend"
